@@ -20,7 +20,7 @@ public class DemoController {
     public ModelAndView getPost(){
         ModelAndView mv = new ModelAndView("posts");
         List<Post> posts = demoService.findAll();
-        mv.addObject("post", posts);
+        mv.addObject("posts", posts);
         return mv;
     }
 
